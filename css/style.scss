@@ -1,0 +1,15 @@
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin font-size($size) {
+	font-size:$size;
+	font-size: ($size / 16px) * 1rem;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+

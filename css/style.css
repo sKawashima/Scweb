@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+body { width: 960px; margin-right: auto; margin-left: auto; font-family: 'Roboto', sans-serif; }
+
+.choices { padding: 25; boader: solid 2px #aca89a; box-sizing: border-box; margin: auto; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+.lo { width: 450px; height: 100px; }
+
+p { margin-right: auto; margin-left: auto; }
+
+#name { width: 210px; float: left; padding-right: 50px; padding-left: 50px; text-align: right; font-size: 16px; font-size: 1rem; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+#menu { height: 250px; width: 600px; float: right; padding-right: 25px; padding-left: 25px; border-left: solid 1px; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
