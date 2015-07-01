@@ -57,7 +57,7 @@ header{
 		padding-right: 20px;
 		width: 100%;
 		height: 35px;
-		img{
+		object{
 			height: 100%;
 			float: left;
 		}
@@ -82,7 +82,7 @@ header{
 		}
 		@include vertical-align;
 	}
-	.more{
+	#more{
 		margin:100px auto;
 		width: 250px;
 		height: 75px;
@@ -95,4 +95,8 @@ header{
 		}
 		@include vertical-align;
 	}
+}
+
+.b{
+	border-bottom: solid 1px #BBB;
 }

@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 1280px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
 body {
   width: 1280px;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
@@ -16,14 +22,19 @@ body {
 header {
   height: 100%;
   color: white;
+  clear: both;
   position: relative;
 }
 header .bgl {
   height: 100%;
   background-color: #000;
-  margin: 0 -100%;
-  padding: 0 100%;
   z-index: 1;
+}
+@media screen and (min-width: 1280px) {
+  header .bgl {
+    margin: 0 -100%;
+    padding: 0 100%;
+  }
 }
 header nav {
   z-index: 5;
@@ -34,7 +45,7 @@ header nav {
   width: 100%;
   height: 35px;
 }
-header nav img {
+header nav object {
   height: 100%;
   float: left;
 }
@@ -60,7 +71,7 @@ header p {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-header .more {
+header #more {
   margin: 100px auto;
   width: 250px;
   height: 75px;
@@ -74,6 +85,10 @@ header .more {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.b {
+  border-bottom: solid 1px #BBB;
 }
 
 /*# sourceMappingURL=style.css.map */
