@@ -22,6 +22,10 @@
 	box-sizing: border-box;
 }
 
+html{
+	overflow: auto;
+}
+
 body{
 	width: 1280px;
 	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
@@ -38,6 +42,7 @@ header{
 		padding: 0 100%;
 		z-index: 1;
 	}
+	overflow: hidden;
 	position: relative;
 	nav{
 		z-index: 5;
