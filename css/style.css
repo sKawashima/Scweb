@@ -88,7 +88,32 @@ header #more {
 }
 
 .b {
-  border-bottom: solid 1px #BBB;
+  text-align: center;
+  border-bottom: solid 1px #333333;
+  height: 450px;
+  color: #333333;
+  width: 1170;
+  margin: 50 auto 0 auto;
+}
+.b h1 {
+  margin: 50px auto;
+  font-size: 48px;
+}
+.b .service {
+  text-align: center;
+  width: 290px;
+  float: left;
+  margin: 0 50px;
+}
+.b .service object {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.b .service h3 {
+  font-weight: 200;
+}
+.b .service p {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
