@@ -87,17 +87,25 @@ header #more {
   transform: translateY(-50%);
 }
 
-.b {
-  text-align: center;
-  border-bottom: solid 1px #333333;
-  height: 450px;
-  color: #333333;
+#services {
+  height: 500px;
   width: 1170;
+}
+
+#works {
+  height: 500px;
+  width: 1254;
+}
+
+.b {
+  border-bottom: solid 1px #333333;
+  color: #333333;
   margin: 50 auto 0 auto;
 }
 .b h1 {
   margin: 50px auto;
   font-size: 48px;
+  text-align: center;
 }
 .b .service {
   text-align: center;
@@ -114,6 +122,23 @@ header #more {
 }
 .b .service p {
   font-size: 14px;
+  text-align: justify;
+}
+.b .work {
+  background-color: #000;
+  margin: 0 10px;
+  float: left;
+  width: 398px;
+  height: 288px;
+}
+.b .work img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.5s;
+}
+.b .work:hover img {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
