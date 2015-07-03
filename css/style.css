@@ -95,7 +95,7 @@ header #more {
   z-index: 99;
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 1280px;
   height: 60px;
   border-bottom: 1px solid #333333;
   background-color: #fff;
@@ -103,32 +103,25 @@ header #more {
 #nav object {
   height: 35px;
   float: left;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-top: 12.5;
+  margin-left: 20px;
 }
 #nav ul {
   list-style-type: none;
-  width: 600px;
-  height: 100%;
+  line-height: 60px;
   float: right;
+  margin-right: 20px;
 }
 #nav ul li {
   font-size: 20px;
   float: left;
   margin-left: 40px;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 @media screen and (min-width: 1280px) {
   #nav {
     margin: 0 -100%;
     padding: 0 100%;
+    box-sizing: content-box;
   }
 }
 
@@ -175,10 +168,10 @@ header #more {
   width: 398px;
   height: 288px;
   position: relative;
+  overflow: hidden;
 }
 .b .work img {
   width: 398px;
-  height: 288px;
   opacity: 1;
   transition: 0.5s;
   z-index: 5;

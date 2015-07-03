@@ -105,31 +105,31 @@ header{
 	z-index: 99;
 	position: fixed;
 	top: 0px;
-	width: 100%;
+	width: 1280px;
 	height: 60px;
 	border-bottom: 1px solid #333333;
 	background-color: #fff;
 	object{
 		height: 35px;
 		float: left;
-		@include vertical-align;
+		margin-top: (60-35)/2;
+		margin-left: 20px;
 	}
 	ul{
 		list-style-type: none;
-		//position: absolute;
-		width: 600px;
-		height: 100%;
+		line-height: 60px;
 		float: right;
+		margin-right: 20px;
 		li{
 			font-size: 20px;
 			float: left;
 			margin-left: 40px;
-			@include vertical-align;
 		}
 	}
 	@media screen and (min-width: 1280px){
 		margin: 0 -100%;
 		padding: 0 100%;
+		box-sizing: content-box;
 	}
 }
 
@@ -179,9 +179,9 @@ header{
 		width: 398px;
 		height: 288px;
 		position: relative;
+		overflow: hidden;
 		img{
 			width: 398px;
-			height: 288px;
 			opacity: 1;
 			transition: 0.5s;
 			z-index: 5;
