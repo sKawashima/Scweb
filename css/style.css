@@ -21,7 +21,6 @@ body {
   width: 1280px;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
   margin: 0 auto;
-  position: relative;
 }
 
 header {
@@ -112,11 +111,9 @@ header #more {
 }
 #nav ul {
   list-style-type: none;
-  margin-right: 40px;
-  margin-left: auto;
   width: 600px;
   height: 100%;
-  text-align: right;
+  float: right;
 }
 #nav ul li {
   font-size: 20px;
@@ -188,7 +185,6 @@ header #more {
   position: absolute;
 }
 .b .work p {
-  height: 100%;
   width: 100%;
   text-align: center;
   z-index: 50;
@@ -220,6 +216,10 @@ header #more {
   opacity: 1;
   margin-top: 0;
   line-height: 288px;
+  font-size: 25px;
+}
+.b .comming:hover img {
+  opacity: 0.8;
 }
 .b .comming:hover p {
   opacity: 0.5;
@@ -227,13 +227,14 @@ header #more {
 
 .sep {
   clear: both;
-  width: 100%;
+  position: relative;
+  width: 200%;
   border-bottom: 1px solid #333;
 }
 @media screen and (min-width: 1280px) {
   .sep {
-    margin: 0 -100%;
-    padding: 0 100%;
+    margin: 0 -500%;
+    padding: 0 500%;
   }
 }
 
