@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1280px) {
   html {
     overflow-x: hidden;
@@ -17,6 +21,7 @@ body {
   width: 1280px;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -87,6 +92,49 @@ header #more {
   transform: translateY(-50%);
 }
 
+#nav {
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #333333;
+  background-color: #fff;
+}
+#nav object {
+  height: 35px;
+  float: left;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#nav ul {
+  list-style-type: none;
+  margin-right: 40px;
+  margin-left: auto;
+  width: 600px;
+  height: 100%;
+  text-align: right;
+}
+#nav ul li {
+  font-size: 20px;
+  float: left;
+  margin-left: 40px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1280px) {
+  #nav {
+    margin: 0 -100%;
+    padding: 0 100%;
+  }
+}
+
 #services {
   height: 500px;
   width: 1170;
@@ -98,7 +146,6 @@ header #more {
 }
 
 .b {
-  border-bottom: solid 1px #333333;
   color: #333333;
   margin: 50 auto 0 auto;
 }
@@ -130,15 +177,84 @@ header #more {
   float: left;
   width: 398px;
   height: 288px;
+  position: relative;
 }
 .b .work img {
-  width: 100%;
-  height: 100%;
+  width: 398px;
+  height: 288px;
   opacity: 1;
   transition: 0.5s;
+  z-index: 5;
+  position: absolute;
+}
+.b .work p {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  line-height: 40px;
+  margin-top: 104px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.b .work p span {
+  font-size: 25px;
 }
 .b .work:hover img {
   opacity: 0.5;
+}
+.b .work:hover p {
+  opacity: 1;
+}
+.b .comming {
+  background-color: #fff;
+}
+.b .comming img {
+  opacity: 0.3;
+}
+.b .comming p {
+  color: #000;
+  opacity: 1;
+  margin-top: 0;
+  line-height: 288px;
+}
+.b .comming:hover p {
+  opacity: 0.5;
+}
+
+.sep {
+  clear: both;
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+@media screen and (min-width: 1280px) {
+  .sep {
+    margin: 0 -100%;
+    padding: 0 100%;
+  }
+}
+
+footer {
+  height: 100px;
+  background-color: #333333;
+  color: #EEEEEE;
+}
+footer p {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    margin: 0 -100%;
+    padding: 0 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

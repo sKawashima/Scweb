@@ -22,6 +22,10 @@
 	box-sizing: border-box;
 }
 
+a{
+	text-decoration:none;
+}
+
 html{
 	@media screen and (min-width: 1280px){
 		overflow-x: hidden;
@@ -32,7 +36,7 @@ body{
 	width: 1280px;
 	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 	margin:0 auto;
-	
+	position: relative;
 }
 
 header{
@@ -96,16 +100,52 @@ header{
 		@include vertical-align;
 	}
 }
+
+#nav{
+	z-index: 99;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #333333;
+	background-color: #fff;
+	object{
+		height: 35px;
+		float: left;
+		@include vertical-align;
+	}
+	ul{
+		list-style-type: none;
+		//position: absolute;
+		margin-right: 40px;
+		margin-left: auto;
+		width: 600px;
+		height: 100%;
+		text-align: right;
+		li{
+			font-size: 20px;
+			float: left;
+			margin-left: 40px;
+			@include vertical-align;
+		}
+	}
+	@media screen and (min-width: 1280px){
+		margin: 0 -100%;
+		padding: 0 100%;
+	}
+}
+
 #services{
 	height: 500px;
 	width:(290+50*2)*3;
 }
+
 #works{
 	height: 500px;
 	width: 20*3 + 398*3;
 }
+
 .b{
-	border-bottom: solid 1px #333333;
 	color: #333333;
 	margin: 50 auto 0 auto;
 	h1{
@@ -140,16 +180,82 @@ header{
 		float: left;
 		width: 398px;
 		height: 288px;
+		position: relative;
 		img{
-			width: 100%;
-			height: 100%;
+			width: 398px;
+			height: 288px;
 			opacity: 1;
 			transition: 0.5s;
+			z-index: 5;
+			position: absolute;
 		}
+		p{
+			height: 100%;
+			width: 100%;
+			text-align: center;
+			z-index: 50;
+			color: #fff;
+			font-size: 18px;
+			span{
+				font-size: 25px;
+			}
+			position: absolute;
+			line-height: 40px;
+			margin-top: 104px;
+			opacity: 0;
+			transition: 0.5s;
+		}
+
 		&:hover{
 			img{
 				opacity: 0.5;
 			}
+			p{
+				opacity: 1;
+			}
 		}
 	}
+	.comming{
+		background-color: #fff;
+		img{
+			opacity: 0.3;
+		}
+		p{
+			color: #000;
+			opacity: 1;
+			margin-top: 0;
+			line-height: 288px;
+		}
+		&:hover{
+			p{
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+.sep{
+	@media screen and (min-width: 1280px){
+		margin: 0 -100%;
+		padding: 0 100%;
+	}
+	clear: both;
+	//position: absolute;
+	width: 100%;
+	border-bottom: 1px solid #333;
+}
+
+footer{
+	p{
+		text-align: center;
+		@include vertical-align;
+	}
+	height: 100px;
+	background-color: #333333;
+	color: #EEEEEE;
+	@media screen and (min-width: 1280px){
+		margin: 0 -100%;
+		padding: 0 100%;
+	}
+
 }
