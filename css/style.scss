@@ -95,6 +95,11 @@ header{
 				font-size: 20px;
 				float: left;
 				margin-left: 40px;
+				padding: 0 3px;
+				transition: .1s;
+				&:hover{
+					border-bottom: solid 1px #eee;
+				}
 			}
 		}
 	}
@@ -107,19 +112,32 @@ header{
 		}
 		@include vertical-align;
 	}
-	#more{
+	a{
+		color: #fff;
+	}
+	#button{
+		position: relative;
+		@include vertical-align;
+		z-index: 5;
 		margin:100px auto;
 		width: 250px;
 		height: 75px;
+		display: block;
 		border: solid 1px white;
+		transition: .1s;
+		&:hover{
+			background:#fff;
+			color: #555;
+			border-radius: 8px;
+		}
+	}
+	#more{
 		text-align: center;
 		line-height: 75px;
-		z-index: 5;
 		font:{
 			size:36px;
 			family: 'Lato', sans-serif;
 		}
-		@include vertical-align;
 	}
 }
 
@@ -130,7 +148,7 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 60px;
-	border-bottom: 1px solid #333333;
+	border-bottom: 1px dotted #666;
 	background-color: #fff;
 	object{
 		height: 35px;
@@ -140,14 +158,23 @@ header{
 	}
 	ul{
 		list-style-type: none;
-		line-height: 60px;
 		float: right;
 		margin-right: 20px;
+		margin-top: 15px;
+
 		li{
 			font-size: 20px;
 			float: left;
-			margin-left: 40px;
+			margin-left: 40px;;
+			padding: 0 3px;
+			transition: .1s;
+			&:hover{
+				border-bottom: solid 1px #333;
+			}
 		}
+	}
+	a{
+		color: #333;
 	}
 	@media screen and (min-width: 1280px){
 		width: 1280px;
@@ -157,12 +184,8 @@ header{
 	}
 }
 
-#services{
-	height: 500px;
-	width:(290+50*2)*3;
-}
-
-#works{
+#Works{
+	text-align: left;
 	height: 500px;
 	width: 20*3 + 398*3;
 	margin-top: 0;
@@ -175,6 +198,44 @@ header{
 	@media screen and (min-width: 1280px){
 		padding: 50px 100%;
 		margin: auto -100%;
+	}
+}
+
+#a{
+	height: 500px;
+	.left_c{
+		float: left;
+		text-align: left;
+		width: 600px;
+		h3{
+			font-size: 36px;
+		}
+		#self_intro{
+			p{
+				margin-bottom: 40px;
+			}
+		}
+	}
+	.right_c{
+		float: right;
+		text-align: left;
+		margin-bottom: 10px;
+		width: 600px;
+		.english{
+			font-size: 12px;
+		}
+		.member{
+			width: 120px;
+			margin-bottom: 10px;
+			float: left;
+		}
+	}
+}
+
+#c{
+	.mail{
+		margin:200px auto;
+		font-size: 48px;
 	}
 }
 
@@ -279,6 +340,10 @@ header{
 	width: 100%;
 	border-bottom: 1px solid #333;
 	z-index: 2;
+}
+
+.hide{
+	display: none;
 }
 
 footer{
