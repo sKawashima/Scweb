@@ -211,12 +211,8 @@ header #more {
   z-index: 3;
 }
 .b .work img {
-  min-width: 398px;
-  min-height: 288px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width: 398px;
+  height: 288px;
   opacity: 1;
   transition: 0.5s;
   z-index: 5;

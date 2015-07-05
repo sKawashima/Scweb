@@ -222,7 +222,8 @@ header{
 		overflow: hidden;
 		z-index: 3;
 		img{
-			@include whmax(398px,288px);
+			width: 398px;
+			height: 288px;
 			opacity: 1;
 			transition: 0.5s;
 			z-index: 5;
