@@ -10,6 +10,15 @@
 	transform: translateY(-50%);
 }
 
+@mixin whmax($w, $h){
+	min-width: $w;
+	min-height: $h;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 @mixin font-size($size) {
 	font-size:$size;
 	font-size: ($size / 16px) * 1rem;
@@ -36,14 +45,12 @@ body{
 	width: 1280px;
 	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 	margin:0 auto;
-	//position: relative;
 }
 
 header{
 	height: 100%;
 	color: white;
 	clear: both;
-	position: static;
 	.bgl{
 		height: 100%;
 		background-color: #000;
@@ -51,22 +58,28 @@ header{
 			margin: 0 -100%;
 			padding: 0 100%;
 		}
-		z-index: 1;
+		z-index: 2;
 	}
 	video{
 		opacity: 0.7;
-		height: 100%;
-		z-index: 3;
+		z-index: 1;
 		position: absolute;
+		@media screen and (min-width: 1280px){
+			margin: 0 -100%;
+			padding: 0 100%;
+			box-sizing: content-box;
+		}
+		left: 0;
+		top: 0;
+		@include whmax(100%,100%);
 	}
-	position: relative;
 	nav{
 		z-index: 5;
 		position: absolute;
 		top: 30px;
 		padding-left: 20px;
 		padding-right: 20px;
-		width: 100%;
+		width: 1280px;
 		height: 35px;
 		object{
 			height: 100%;
@@ -75,7 +88,7 @@ header{
 		ul{
 			list-style-type: none;
 			right: 20px;
-			position: absolute;
+			position: relative;
 			height: 100%;
 			float: right;
 			li{
@@ -115,7 +128,7 @@ header{
 	z-index: 99;
 	position: fixed;
 	top: 0px;
-	width: 1280px;
+	width: 100%;
 	height: 60px;
 	border-bottom: 1px solid #333333;
 	background-color: #fff;
@@ -137,6 +150,7 @@ header{
 		}
 	}
 	@media screen and (min-width: 1280px){
+		width: 1280px;
 		margin: 0 -100%;
 		padding: 0 100%;
 		box-sizing: content-box;
@@ -151,11 +165,26 @@ header{
 #works{
 	height: 500px;
 	width: 20*3 + 398*3;
+	margin-top: 0;
+	padding-top: 50px;
+	h1{
+		margin-top: 0;
+	}
+	margin: 0 -100% 50px -100%;
+	padding: 50 100% 0 100%;
+	//box-sizing: content-box;
+	background-color: #fff;
+
 }
 
 .b{
+	z-index: 2;
 	color: #333333;
+	background-color: #fff;
 	margin: 50 auto 0 auto;
+	box-sizing: content-box;
+	position: relative;
+	
 	h1{
 		margin: 50px auto;
 		font:{
@@ -190,8 +219,9 @@ header{
 		height: 288px;
 		position: relative;
 		overflow: hidden;
+		z-index: 3;
 		img{
-			width: 398px;
+			@include whmax(398px,288px);
 			opacity: 1;
 			transition: 0.5s;
 			z-index: 5;
@@ -234,14 +264,6 @@ header{
 			line-height: 288px;
 			font-size: 25px
 		}
-		&:hover{
-			img{
-				opacity: 0.8;
-			}
-			p{
-				opacity: 0.5;
-			}
-		}
 	}
 }
 
@@ -252,11 +274,14 @@ header{
 	}
 	clear: both;
 	position: relative;
-	width: 200%;
+	width: 100%;
 	border-bottom: 1px solid #333;
+	z-index: 2;
 }
 
 footer{
+	z-index: 5;
+	position: relative;
 	p{
 		text-align: center;
 		@include vertical-align;

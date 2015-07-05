@@ -1,10 +1,10 @@
 $(function() {
 	$(window).scroll(function () {
 		var s = $(this).scrollTop();
-		var m = $(window).height()-49;
+		var m = $(window).height()-30;
 		if(s > m) {
 			$("#nav").fadeIn('slow');
-		} else if(s < m) {
+		} else {
 			$("#nav").fadeOut('slow');
 		}
 	});

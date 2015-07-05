@@ -27,13 +27,11 @@ header {
   height: 100%;
   color: white;
   clear: both;
-  position: static;
-  position: relative;
 }
 header .bgl {
   height: 100%;
   background-color: #000;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (min-width: 1280px) {
   header .bgl {
@@ -43,9 +41,23 @@ header .bgl {
 }
 header video {
   opacity: 0.7;
-  height: 100%;
-  z-index: 3;
+  z-index: 1;
   position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1280px) {
+  header video {
+    margin: 0 -100%;
+    padding: 0 100%;
+    box-sizing: content-box;
+  }
 }
 header nav {
   z-index: 5;
@@ -53,7 +65,7 @@ header nav {
   top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
+  width: 1280px;
   height: 35px;
 }
 header nav object {
@@ -63,7 +75,7 @@ header nav object {
 header nav ul {
   list-style-type: none;
   right: 20px;
-  position: absolute;
+  position: relative;
   height: 100%;
   float: right;
 }
@@ -105,7 +117,7 @@ header #more {
   z-index: 99;
   position: fixed;
   top: 0px;
-  width: 1280px;
+  width: 100%;
   height: 60px;
   border-bottom: 1px solid #333333;
   background-color: #fff;
@@ -129,6 +141,7 @@ header #more {
 }
 @media screen and (min-width: 1280px) {
   #nav {
+    width: 1280px;
     margin: 0 -100%;
     padding: 0 100%;
     box-sizing: content-box;
@@ -143,11 +156,23 @@ header #more {
 #works {
   height: 500px;
   width: 1254;
+  margin-top: 0;
+  padding-top: 50px;
+  margin: 0 -100% 50px -100%;
+  padding: 50 100% 0 100%;
+  background-color: #fff;
+}
+#works h1 {
+  margin-top: 0;
 }
 
 .b {
+  z-index: 2;
   color: #333333;
+  background-color: #fff;
   margin: 50 auto 0 auto;
+  box-sizing: content-box;
+  position: relative;
 }
 .b h1 {
   margin: 50px auto;
@@ -179,9 +204,15 @@ header #more {
   height: 288px;
   position: relative;
   overflow: hidden;
+  z-index: 3;
 }
 .b .work img {
-  width: 398px;
+  min-width: 398px;
+  min-height: 288px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
   transition: 0.5s;
   z-index: 5;
@@ -221,18 +252,13 @@ header #more {
   line-height: 288px;
   font-size: 25px;
 }
-.b .comming:hover img {
-  opacity: 0.8;
-}
-.b .comming:hover p {
-  opacity: 0.5;
-}
 
 .sep {
   clear: both;
   position: relative;
-  width: 200%;
+  width: 100%;
   border-bottom: 1px solid #333;
+  z-index: 2;
 }
 @media screen and (min-width: 1280px) {
   .sep {
@@ -242,6 +268,8 @@ header #more {
 }
 
 footer {
+  z-index: 5;
+  position: relative;
   height: 100px;
   background-color: #333333;
   color: #EEEEEE;
