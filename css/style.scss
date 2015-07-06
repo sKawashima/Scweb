@@ -155,7 +155,17 @@ header{
 		//float: left;
 		margin-top: (60-35)/2;
 		margin-left: 20px;
-			position: relative;
+		position: relative;
+		float: left;
+	}
+	p{
+		position: relative;
+		float: left;
+		line-height: 60px;
+		padding-top: 4px;
+		padding-left: 20px;
+		color:#003D56;
+		font-size: 18px;
 	}
 	ul{
 		list-style-type: none;
@@ -188,24 +198,30 @@ header{
 	display: block !important;
 }
 
-#Works{
+#Works{/*Works*/
 	text-align: left;
-	height: 500px;
+	//height: 500px;
 	width: 20*3 + 398*3;
 	margin-top: 0;
 	padding-top: 50px;
+	padding-bottom: 100px;
 	h1{
 		margin-top: 0;
 	}
 	padding: 50px 0;
 	background-color: #fff;
 	@media screen and (min-width: 1280px){
-		padding: 50px 100%;
+		padding: 50px 100% 100px 100%;
 		margin: auto -100%;
+	}
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
 	}
 }
 
-#a{
+#a{/*About*/
 	height: 500px;
 	.left_c{
 		float: left;
@@ -213,17 +229,18 @@ header{
 		width: 600px;
 		h3{
 			font-size: 36px;
+			margin-bottom: 20px;
 		}
 		#self_intro{
 			p{
-				margin-bottom: 40px;
+				margin-top: 30px;
 			}
 		}
 	}
 	.right_c{
 		float: right;
 		text-align: left;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		width: 600px;
 		.english{
 			font-size: 12px;
@@ -236,7 +253,7 @@ header{
 	}
 }
 
-#c{
+#c{/*Contacts*/
 	.mail{
 		margin:200px auto;
 		font-size: 48px;
@@ -287,12 +304,12 @@ header{
 		overflow: hidden;
 		z-index: 3;
 		img{
-			width: 398px;
 			height: 288px;
 			opacity: 1;
 			transition: 0.5s;
 			z-index: 5;
 			position: absolute;
+			left: -56px;
 		}
 		p{
 			width: 100%;
@@ -320,7 +337,7 @@ header{
 		}
 	}
 	.comming{
-		background-color: #fff;
+		background-color: #ddd;
 		img{
 			opacity: 0.3;
 		}
@@ -332,6 +349,50 @@ header{
 			font-size: 25px
 		}
 	}
+}
+
+.m_main{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 380px;
+	.video{
+		width: 580px;
+		height: 327px;
+		background-color: #DDD;
+		video{
+			width: 580px;
+		}
+	}
+	.cs{
+		@include vertical-align;
+		text-align: center;
+	}
+	.info{
+		width: 580px;
+		.m_theme{
+			font-size: 24px;
+		}
+	}
+}
+
+.point{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 215px;
+	.pic{
+		width: 580px;
+		img{
+			width: 285px;
+
+		}
+	}
+	.exp{
+		width: 580px;
+	}
+
 }
 
 .sep{
@@ -348,6 +409,14 @@ header{
 
 .hide{
 	display: none;
+}
+
+.l{
+	float: left;
+}
+
+.r{
+	float: right;
 }
 
 .blank60{
@@ -368,5 +437,4 @@ footer{
 		margin: 0 -100%;
 		padding: 0 100%;
 	}
-
 }
