@@ -131,7 +131,7 @@ header #more {
 
 #nav {
   display: none;
-  z-index: 99;
+  z-index: 50;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -141,9 +141,9 @@ header #more {
 }
 #nav object {
   height: 35px;
-  float: left;
   margin-top: 12.5;
   margin-left: 20px;
+  position: relative;
 }
 #nav ul {
   list-style-type: none;
@@ -171,6 +171,10 @@ header #more {
     padding: 0 100%;
     box-sizing: content-box;
   }
+}
+
+.d {
+  display: block !important;
 }
 
 #Works {
@@ -327,9 +331,12 @@ header #more {
   display: none;
 }
 
+.blank60 {
+  height: 60px;
+}
+
 footer {
   z-index: 5;
-  position: relative;
   height: 100px;
   background-color: #333333;
   color: #EEEEEE;
