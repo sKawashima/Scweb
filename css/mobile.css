@@ -1,0 +1,201 @@
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  header {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+  }
+  header .bgl {
+    top: 0;
+    left: 0;
+  }
+  header img {
+    width: 100%;
+    height: 50vw;
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0.7;
+  }
+  header video {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header p {
+    font-size: 32px;
+  }
+  header #button {
+    display: none;
+  }
+  header:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  #nav {
+    display: block;
+    text-align: center;
+  }
+  #nav ul {
+    display: none;
+  }
+  #nav img {
+    float: none;
+  }
+
+  .d {
+    text-align: left;
+  }
+  .d img {
+    float: left !important;
+  }
+
+  #Works {
+    width: 90%;
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+
+  #a {
+    height: auto;
+  }
+  #a .left_c {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    margin-bottom: 30px;
+  }
+  #a .right_c {
+    width: 90%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  #c {
+    width: 90%;
+  }
+  #c .mail {
+    margin: 100px auto;
+    font-size: 24px;
+  }
+
+  .b {
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .b:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .b .h {
+    margin-bottom: 10px;
+  }
+  .b .work {
+    margin: 20px auto;
+    width: 100%;
+    height: 50vw;
+  }
+  .b .work img {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  .b .work p {
+    margin-top: 30vw;
+    display: block;
+    opacity: 1;
+  }
+  .b .work:hover img {
+    opacity: 1;
+  }
+  .b .work .bg {
+    position: relative;
+    margin-top: 25vw;
+    display: block;
+    width: 100%;
+    height: 25vw;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 20;
+  }
+  .b .comming p {
+    margin-top: 25vw;
+    line-height: 0;
+  }
+  .b .comming:hover img {
+    opacity: 0.3;
+  }
+
+  .m_main {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 90%;
+    height: auto;
+  }
+  .m_main:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .m_main .video {
+    width: 100%;
+  }
+  .m_main .video video {
+    width: 100%;
+  }
+  .m_main .info {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .m_main .info .m_theme {
+    margin-bottom: 10px;
+  }
+
+  .point {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+    height: auto;
+  }
+  .point:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .point .pic {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .point .pic img {
+    width: 49%;
+  }
+  .point .exp {
+    width: 100%;
+  }
+}

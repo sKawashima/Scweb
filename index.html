@@ -3,16 +3,18 @@
 	<meta charset="utf-8">
 	<title>ハコダテソラカメラ Webサイト</title>
 	<link rel="stylesheet" href="css/style.css" media="all" />
-
+	<link rel="stylesheet" href="css/mobile.css" media="all" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.smoothScroll.js"></script>
 	<script type="text/javascript" src="js/scroll_show.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
-	<header>
-		<video src="movie/webmovie.mp4" autoplay loop muted id="video">
+<body id="top">
+	<header id="video">
+		<video src="movie/webmovie.mp4" autoplay loop muted >
 			<p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
 		</video>
+		<img src="img/saka-m.jpg">
 		<div class="bgl">
 			<nav>
 				<object data="img/shironuki-02.svg"type="image/svg+xml"></object>
@@ -28,7 +30,7 @@
 	</header>
 
 	<div id="nav">
-		<a href="#video" class="totop">
+		<a href="#top" class="totop">
 			<img src="img/Soracam_Logo.svg" type="image/svg+xml">
 		</a>
 		<ul>
@@ -46,6 +48,7 @@
 				<p><span>「Angle」</span>
 					<br>様々な視点で西部地区を見る</p>
 			</a>
+			<div class="bg"></div>
 		</div>
 		<div class="work">
 			<a href="saka.html">
@@ -53,12 +56,11 @@
 				<p><span>「坂」</span>
 					<br>坂の歴史をたどる</p>
 			</a>
+			<div class="bg"></div>
 		</div>
 		<div class="work comming">
-			<a href="#">
-				<img src="img/logo.jpg">
-				<p>comming soon</p>
-			</a>
+			<img src="img/logo.jpg">
+			<p>comming soon</p>
 		</div>
 	</div>
 
@@ -74,16 +76,16 @@
 			</div>
 		</div>
 		<div class="right_c">
-			<p class="cont">ハコダテソラカメラプロジェクト</p>
+			<p class="cont h">ハコダテソラカメラプロジェクト</p>
 			<p class="english">Project13. Hakodate Soracamera</p>
 		</div>
 		<div class="right_c">
-			<p class="cont">所在地</p>
+			<p class="cont h">所在地</p>
 			<p class="cont">〒041-8655 北海道函館市亀田中野町116番地2</p>
 			<p class="english">116-2 Kamedanakano-cho, Hakodate, Hokkaido, Japan 041-8655</p>
 		</div>
 		<div class="right_c">
-			<p class="cont">メンバー</p>
+			<p class="cont h">メンバー</p>
 			<div class="member">
 				<p class="cont">平間友大</p>
 				<p class="english">Yudai Hirama</p>
