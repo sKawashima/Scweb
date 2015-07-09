@@ -39,7 +39,16 @@
   }
   header p {
     font-size: 32px;
+    padding-left: 16px;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 335px) {
+  header p {
+    font-size: 24px;
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
   header #button {
     display: none;
   }
@@ -90,7 +99,17 @@
     margin-left: auto;
     float: none;
   }
+  #a .right_c .member {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 380px) {
+  #a .right_c .member {
+    width: 48%;
+  }
+}
 
+@media screen and (max-width: 768px) {
   #c {
     width: 90%;
   }
@@ -123,7 +142,7 @@
     left: 0;
   }
   .b .work p {
-    margin-top: 30vw;
+    margin-top: 27vw;
     display: block;
     opacity: 1;
   }
