@@ -59,6 +59,11 @@ header video {
     box-sizing: content-box;
   }
 }
+@media screen and (max-width: 1279px) {
+  header video {
+    width: 1280px;
+  }
+}
 header nav {
   z-index: 5;
   position: absolute;
