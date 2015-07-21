@@ -182,9 +182,11 @@
   }
   .m_main .video {
     width: 100%;
+    height: 56.25vw;
   }
-  .m_main .video video {
+  .m_main .video iframe {
     width: 100%;
+    height: 100%;
   }
   .m_main .info {
     margin: 20px 0;

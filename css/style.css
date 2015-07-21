@@ -420,10 +420,11 @@ header #more {
   background-color: #DDD;
 }
 /* line 370, style.scss */
-.m_main .video video {
-  width: 580px;
+.m_main .video iframe {
+  width: 100%;
+  height: 100%;
 }
-/* line 374, style.scss */
+/* line 375, style.scss */
 .m_main .cs {
   position: relative;
   top: 50%;
@@ -432,37 +433,37 @@ header #more {
   transform: translateY(-50%);
   text-align: center;
 }
-/* line 378, style.scss */
+/* line 379, style.scss */
 .m_main .info {
   width: 580px;
 }
-/* line 380, style.scss */
+/* line 381, style.scss */
 .m_main .info .m_theme {
   font-size: 24px;
 }
 
-/* line 386, style.scss */
+/* line 387, style.scss */
 .point {
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   height: 215px;
 }
-/* line 391, style.scss */
+/* line 392, style.scss */
 .point .pic {
   width: 580px;
 }
-/* line 393, style.scss */
+/* line 394, style.scss */
 .point .pic img {
   width: 285px;
   overflow: hidden;
 }
-/* line 398, style.scss */
+/* line 399, style.scss */
 .point .exp {
   width: 580px;
 }
 
-/* line 404, style.scss */
+/* line 405, style.scss */
 .sep {
   clear: both;
   position: relative;
@@ -471,41 +472,41 @@ header #more {
   z-index: 40;
 }
 @media screen and (min-width: 1280px) {
-  /* line 404, style.scss */
+  /* line 405, style.scss */
   .sep {
     margin: 0 -500%;
     padding: 0 500%;
   }
 }
 
-/* line 416, style.scss */
+/* line 417, style.scss */
 .hide {
   display: none;
 }
 
-/* line 420, style.scss */
+/* line 421, style.scss */
 .l {
   float: left;
 }
 
-/* line 424, style.scss */
+/* line 425, style.scss */
 .r {
   float: right;
 }
 
-/* line 428, style.scss */
+/* line 429, style.scss */
 .blank60 {
   height: 60px;
 }
 
-/* line 432, style.scss */
+/* line 433, style.scss */
 footer {
   z-index: 5;
   height: 100px;
   background-color: #333333;
   color: #EEEEEE;
 }
-/* line 435, style.scss */
+/* line 436, style.scss */
 footer p {
   text-align: center;
   position: relative;
@@ -515,7 +516,7 @@ footer p {
   transform: translateY(-50%);
 }
 @media screen and (min-width: 1280px) {
-  /* line 432, style.scss */
+  /* line 433, style.scss */
   footer {
     margin: 0 -100%;
     padding: 0 100%;
