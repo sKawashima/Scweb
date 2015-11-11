@@ -1,0 +1,148 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  height: 100%;
+}
+
+.contents {
+  position: relative;
+}
+.contents:after {
+  content: "";
+}
+
+body {
+  font-family: “Times New Roman”,  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho,"HG明朝E", "MS P明朝", "MS PMincho", "MS 明朝","メイリオ", Meiryo, serif;
+}
+
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
+#menu {
+  box-sizing: border-box;
+  position: fixed;
+  background-image: url("../img/bg.jpg");
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  z-index: 10;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+#menu ul {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  left: 125px;
+  position: relative;
+  list-style-type: none;
+  font-size: 16px;
+  color: #8E6134;
+}
+#menu ul li {
+  line-height: 1;
+  margin-top: 30px;
+}
+#menu ul li:before {
+  font-size: 9px;
+  content: "・";
+}
+#menu ul .small {
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#menu ul .small:before {
+  content: "-";
+}
+#menu ul .sub {
+  color: #BBA58D;
+  font-size: 11px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+#menu ul .sub:before {
+  content: "";
+}
+#menu ul .left10 {
+  margin-left: 15px;
+}
+#menu .facebook {
+  position: absolute;
+  color: #8E6134;
+  font-size: 11px;
+  bottom: 50px;
+}
+#menu .twitter {
+  position: absolute;
+  color: #8E6134;
+  font-size: 11px;
+  bottom: 30px;
+}
+#menu .copyright {
+  position: absolute;
+  color: #ADADAD;
+  font-size: 11px;
+  bottom: 10px;
+}
+
+.layer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#overview {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 440px;
+  height: 300px;
+  margin: 25px;
+  margin-bottom: 50px;
+  padding: 19px;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.1;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+#overview:hover {
+  opacity: 0.3;
+}
+#overview h3 {
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+#overview h3 .sub {
+  font-size: 10px;
+}
+#overview p {
+  line-height: 1.7;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
