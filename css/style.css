@@ -92,7 +92,8 @@ header nav ul li {
   float: left;
   margin-left: 40px;
   padding: 0 3px;
-  transition: .1s;
+  -webkit-transition: .1s;
+          transition: .1s;
 }
 header nav ul li:hover {
   border-bottom: solid 1px #eee;
@@ -125,7 +126,8 @@ header #button {
   display: block;
   border: solid 1px white;
   opacity: 1;
-  transition: .1s;
+  -webkit-transition: .1s;
+          transition: .1s;
 }
 header #button:hover {
   background: #fff;
@@ -180,7 +182,8 @@ header #more {
   float: left;
   margin-left: 40px;
   padding: 0 3px;
-  transition: .1s;
+  -webkit-transition: .1s;
+          transition: .1s;
 }
 #nav ul li:hover {
   border-bottom: solid 1px #333;
@@ -297,7 +300,8 @@ header #more {
 .b .work img {
   height: 288px;
   opacity: 1;
-  transition: 0.5s;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
   z-index: 5;
   position: absolute;
   left: -56px;
@@ -312,7 +316,8 @@ header #more {
   line-height: 40px;
   margin-top: 104px;
   opacity: 0;
-  transition: 0.5s;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
 }
 .b .work p span {
   font-size: 25px;
@@ -446,5 +451,3 @@ footer p {
     padding: 0 100%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

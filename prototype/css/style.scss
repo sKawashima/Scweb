@@ -54,6 +54,12 @@ video{
 
 	padding: 10px;
 
+	img{
+		@include vertical-align;
+		left: 25px;
+		position: absolute;
+	}
+
 	ul{
 		@include vertical-align;
 		left: 125px;
@@ -138,7 +144,7 @@ video{
     -o-transition: all 0.6s;
     transition: all 0.6s;
 	&:hover{
-		opacity: 0.3;
+		opacity: 0.5;
 	}
 	h3{
 		border-bottom: 2px solid #fff;
