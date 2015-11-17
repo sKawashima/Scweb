@@ -180,8 +180,9 @@ header #more {
 #nav ul li {
   font-size: 20px;
   float: left;
-  margin-left: 40px;
-  padding: 0 3px;
+  margin-left: 37px;
+  margin-right: -3px;
+  padding: 0 6px;
   -webkit-transition: .1s;
           transition: .1s;
 }
@@ -361,7 +362,7 @@ header #more {
   height: 380px;
 }
 .m_main .video {
-  width: 580px;
+  width: 600px;
   height: auto;
   background-color: #DDD;
 }
@@ -378,7 +379,7 @@ header #more {
   text-align: center;
 }
 .m_main .info {
-  width: 580px;
+  width: 600px;
 }
 .m_main .info .m_theme {
   font-size: 24px;
@@ -388,17 +389,17 @@ header #more {
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 215px;
+  height: 200px;
 }
 .point .pic {
-  width: 580px;
+  width: 600px;
 }
 .point .pic img {
-  width: 285px;
+  width: 300px;
   overflow: hidden;
 }
 .point .exp {
-  width: 580px;
+  width: 600px;
 }
 
 .sep {

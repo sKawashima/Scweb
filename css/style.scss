@@ -188,8 +188,9 @@ header{
 		li{
 			font-size: 20px;
 			float: left;
-			margin-left: 40px;;
-			padding: 0 3px;
+			margin-left: 37px;
+			margin-right: -3px;
+			padding: 0 6px;
 			transition: .1s;
 			&:hover{
 				border-bottom: solid 1px #333;
@@ -357,6 +358,9 @@ header{
 	}
 }
 
+$centerMargin : 40px;
+$columnWidth : (1240px - $centerMargin)/2;
+
 .m_main{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -364,7 +368,7 @@ header{
 	margin-right: 20px;
 	height: 380px;
 	.video{
-		width: 580px;
+		width: $columnWidth;
 		height: auto;
 		background-color: #DDD;
 		iframe{
@@ -377,7 +381,7 @@ header{
 		text-align: center;
 	}
 	.info{
-		width: 580px;
+		width: $columnWidth;
 		.m_theme{
 			font-size: 24px;
 		}
@@ -388,16 +392,16 @@ header{
 	margin-bottom: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	height: 215px;
+	height: 200px;
 	.pic{
-		width: 580px;
+		width: $columnWidth;
 		img{
-			width: 285px;
+			width: 300px;
 			overflow: hidden;
 		}
 	}
 	.exp{
-		width: 580px;
+		width: $columnWidth;
 	}
 
 }
