@@ -309,7 +309,7 @@ header{
 			transition: 0.5s;
 			z-index: 5;
 			position: absolute;
-			left: -56px;
+			left: -57px;
 		}
 		p{
 			width: 100%;
@@ -339,6 +339,12 @@ header{
 			}
 		}
 	}
+	.logo{
+		img{
+			left: -28px !important;
+		}
+		border: 1px solid #666;
+	}
 	.comming{
 		background-color: #ddd;
 		img{
@@ -367,6 +373,7 @@ $columnWidth : (1240px - $centerMargin)/2;
 	margin-left: 20px;
 	margin-right: 20px;
 	height: 380px;
+	clear: both;
 	.video{
 		width: $columnWidth;
 		height: auto;
@@ -375,6 +382,12 @@ $columnWidth : (1240px - $centerMargin)/2;
 			width: 100%;
 			height: 100%;
 		}
+	}
+	img{
+		width: $columnWidth;
+		height: auto;
+		margin-bottom: 60px;
+		clear: left;
 	}
 	.cs{
 		@include vertical-align;
@@ -393,6 +406,13 @@ $columnWidth : (1240px - $centerMargin)/2;
 	margin-left: 20px;
 	margin-right: 20px;
 	height: 200px;
+	clear: both;
+	.long{
+		width: $columnWidth;
+		height: auto;
+		margin-bottom: 60px;
+		clear: left;
+	}
 	.pic{
 		width: $columnWidth;
 		img{
@@ -441,7 +461,7 @@ footer{
 		text-align: center;
 		@include vertical-align;
 	}
-	height: 100px;
+	height: 60px;
 	background-color: #333333;
 	color: #EEEEEE;
 	@media screen and (min-width: 1280px){

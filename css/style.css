@@ -305,7 +305,7 @@ header #more {
           transition: 0.5s;
   z-index: 5;
   position: absolute;
-  left: -56px;
+  left: -57px;
 }
 .b .work p {
   width: 100%;
@@ -331,6 +331,12 @@ header #more {
 }
 .b .work:hover p {
   opacity: 1;
+}
+.b .logo {
+  border: 1px solid #666;
+}
+.b .logo img {
+  left: -28px !important;
 }
 .b .comming {
   background-color: #ddd;
@@ -360,6 +366,7 @@ header #more {
   margin-left: 20px;
   margin-right: 20px;
   height: 380px;
+  clear: both;
 }
 .m_main .video {
   width: 600px;
@@ -369,6 +376,12 @@ header #more {
 .m_main .video iframe {
   width: 100%;
   height: 100%;
+}
+.m_main img {
+  width: 600px;
+  height: auto;
+  margin-bottom: 60px;
+  clear: left;
 }
 .m_main .cs {
   position: relative;
@@ -390,6 +403,13 @@ header #more {
   margin-left: 20px;
   margin-right: 20px;
   height: 200px;
+  clear: both;
+}
+.point .long {
+  width: 600px;
+  height: auto;
+  margin-bottom: 60px;
+  clear: left;
 }
 .point .pic {
   width: 600px;
@@ -434,7 +454,7 @@ header #more {
 
 footer {
   z-index: 5;
-  height: 100px;
+  height: 60px;
   background-color: #333333;
   color: #EEEEEE;
 }
