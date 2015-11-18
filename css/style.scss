@@ -383,6 +383,16 @@ $columnWidth : (1240px - $centerMargin)/2;
 			height: 100%;
 		}
 	}
+	.animeGif{
+		width: $columnWidth;
+		//height: auto;
+		background-color: #DDD;
+		img{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 0;
+		}
+	}
 	img{
 		width: $columnWidth;
 		height: auto;
