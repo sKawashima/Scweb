@@ -336,7 +336,7 @@ header #more {
   border: 1px solid #666;
 }
 .b .logo img {
-  left: -28px !important;
+  left: -28px;
 }
 .b .comming {
   background-color: #ddd;
