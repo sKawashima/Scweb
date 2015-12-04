@@ -166,6 +166,9 @@
   .b .comming:hover img {
     opacity: 0.3;
   }
+  .b .logo {
+    left: 0;
+  }
 
   .m_main {
     margin-top: 30px;
@@ -209,14 +212,18 @@
     clear: both;
     display: block;
   }
-  .point .pic {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .point .pic img {
-    width: 49%;
-  }
   .point .exp {
     width: 100%;
+  }
+
+  .pic {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .pic .long {
+    width: 100% !important;
+  }
+  .pic img {
+    width: 49%;
   }
 }

@@ -383,7 +383,7 @@ header #more {
 }
 .m_main .animeGif img {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-bottom: 0;
 }
 .m_main img {
@@ -415,7 +415,7 @@ header #more {
   clear: both;
 }
 .point .long {
-  width: 600px;
+  width: 600px !important;
   height: auto;
   margin-bottom: 60px;
   clear: left;
