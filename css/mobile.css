@@ -68,6 +68,9 @@
   #nav img {
     float: none;
   }
+  #nav p {
+    display: none;
+  }
 
   .d {
     text-align: left;
