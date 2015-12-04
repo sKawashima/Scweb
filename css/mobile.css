@@ -218,6 +218,10 @@
   .point .exp {
     width: 100%;
   }
+  .point img {
+    width: 100% !important;
+    margin: 10px 0;
+  }
 
   .pic {
     width: 100% !important;
