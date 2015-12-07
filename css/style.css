@@ -290,7 +290,7 @@ header #more {
 }
 .b .work {
   background-color: #000;
-  margin: 0 10px;
+  margin: 10px 10px;
   float: left;
   width: 398px;
   height: 288px;
@@ -340,12 +340,13 @@ header #more {
 }
 .b .comming {
   background-color: #ddd;
+  overflow: hidden;
 }
 .b .comming img {
   opacity: 0.3;
-  width: 398px;
-  height: auto;
-  left: 0;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
