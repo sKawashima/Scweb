@@ -194,6 +194,9 @@
     width: 100%;
     height: 100%;
   }
+  .m_main img {
+    margin-bottom: 0;
+  }
   .m_main .info {
     margin: 20px 0;
     width: 100%;
