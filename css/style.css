@@ -332,11 +332,11 @@ header #more {
 .b .work:hover p {
   opacity: 1;
 }
-.b .logo {
-  border: 1px solid #666;
-}
-.b .logo img {
+.b .img_l0 img {
   left: -28px;
+}
+.b .blackboader {
+  border: 1px solid #666;
 }
 .b .comming {
   background-color: #ddd;
